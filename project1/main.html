@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver 레이아웃 연습</title>
+    <style>
+        /* basic style */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+        }
+        /* header style */
+        header {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        /* header-top style */
+        .header-top {
+            height: 52px;
+        }
+        .header-top > div {
+            overflow: hidden;
+        }
+        .header-top > div > * {
+            float: left;
+            margin: 10px;
+        }
+        .header-top-left { /* 토글, 페이 아이콘 영역 */
+            float: left;
+        }
+        .header-top-right { /* 톡, 알림, 장바구니 영역 */
+            float: right;
+        }
+        /* header-middle style */
+        .header-middle {
+            margin-bottom: 20px;
+        }
+        .search-form { /* 검색창 영역 */
+            width: 700px;
+            height: 58px;
+            margin: 0 auto;
+            border: 3px solid green;
+        }
+        /* header-bottom style */
+        .header-bottom > ul { /* 메뉴 아이콘 영역 */
+            overflow: hidden;
+            width: 658px;
+            margin: 0 auto;
+        }
+        .header-bottom > .main-menu > li {
+            float: left;
+        }
+        .header-bottom > .main-menu > li > a > span {
+            display: block;
+        }
+        .header-bottom > .main-menu > li > a > span:first-child { /* 아이콘 */
+            margin: 0 10px;
+        }
+        .header-bottom > .main-menu > li > a > span:last-child { /* 라벨 */
+            margin-top: 5px;
+            text-align: center;
+        }
+        .header-bottom > .main-menu > li:last-child {
+            margin-left: 10px;
+        }
+        .header-bottom > .main-menu > li:last-child > a {
+            position: relative;
+        }
+        .header-bottom > .main-menu > li:last-child > a::before { /* 광고 구분선 */
+            content: "";
+            width: 1px;
+            height: 20px;
+            background: #ccc;
+            position: absolute;
+            left: -5px;
+            top: 8px;
+        }
+        /* icon style */
+        .app-box { /* 아이콘 형식 */
+            width: 32px;
+            height: 32px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <div class="app-box"></div>
+                <div class="app-box"></div>
+            </div>
+            <div class="header-top-right">
+                <div class="app-box"></div>
+                <div class="app-box"></div>
+                <div class="app-box"></div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="search-form">
+                <!-- <label for="search">검색</label>
+                <input type="text" id="search"> -->
+            </div>
+        </div>
+        <div class="header-bottom">
+            <ul class="main-menu">
+                <li><a href="#"><span><div class="app-box"></div></span><span>메일</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>카페</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>블로그</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>스토어</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>뉴스</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>증권</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>부동산</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>지도</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>웹툰</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>치지직</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>더보기</span></a></li>
+                <li><a href="#"><span><div class="app-box"></div></span><span>광고</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <footer></footer>
+</body>
+</html>
