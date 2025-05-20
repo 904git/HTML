@@ -1,0 +1,97 @@
+/* header style */
+header {
+    width: 1200px;
+    margin: 0 auto 20px;
+}
+
+/* header-top style */
+.header-top {
+    height: 52px;
+}
+
+.header-top>div {
+    overflow: hidden;
+}
+
+.header-top>div>* {
+    float: left;
+    margin: 10px;
+}
+
+.header-top-left {
+    /* 토글, 페이 아이콘 영역 */
+    float: left;
+}
+
+.header-top-right {
+    /* 톡, 알림, 장바구니 영역 */
+    float: right;
+}
+
+/* header-middle style */
+.header-middle {
+    margin-bottom: 20px;
+}
+
+.search-form {
+    /* 검색창 영역 */
+    width: 700px;
+    height: 58px;
+    margin: 0 auto;
+    border: 3px solid green;
+}
+
+/* header-bottom style */
+.header-bottom>ul {
+    /* 메뉴 아이콘 영역 */
+    overflow: hidden;
+    width: 658px;
+    margin: 0 auto;
+}
+
+.header-bottom>.main-menu>li {
+    float: left;
+}
+
+.header-bottom>.main-menu>li>a>span {
+    display: block;
+}
+
+.header-bottom>.main-menu>li>a>span:first-child {
+    /* 아이콘 */
+    margin: 0 10px;
+}
+
+.header-bottom>.main-menu>li>a>span:last-child {
+    /* 라벨 */
+    margin-top: 5px;
+    text-align: center;
+}
+
+.header-bottom>.main-menu>li:last-child {
+    margin-left: 10px;
+}
+
+.header-bottom>.main-menu>li:last-child>a {
+    position: relative;
+}
+
+.header-bottom>.main-menu>li:last-child>a::before {
+    /* 광고 구분선 */
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #ccc;
+    position: absolute;
+    left: -5px;
+    top: 8px;
+}
+
+/* icon style */
+.app-box {
+    /* 아이콘 형식 */
+    width: 32px;
+    height: 32px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}

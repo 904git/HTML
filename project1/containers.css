@@ -1,0 +1,82 @@
+/* containers style */
+#containers {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* section style */
+section {
+    float: left;
+    width: 785px;
+}
+
+section>* {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+section>.news-box {
+    height: 300px;
+}
+
+section>.shop-box {
+    height: 400px;
+}
+
+section>.post-box {
+    height: 800px;
+}
+
+section>.ad-box:last-child {
+    height: 60px;
+}
+
+/* aside style */
+aside {
+    float: right;
+    width: 385px;
+}
+
+aside>* {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+aside>.user-box {
+    height: 150px;
+}
+
+aside>.weather-box,
+aside>.stock-box {
+    height: 200px;
+}
+
+aside>.widget-box {
+    height: 450px;
+}
+
+/* advertise box style */
+#containers>*>.ad-box.height-60 {
+    height: 60px;
+}
+
+#containers>*>.ad-box.height-120 {
+    height: 120px;
+}
+
+#containers>*>.ad-box.height-150 {
+    height: 150px;
+}
+
+#containers>*>.ad-box.height-200 {
+    height: 200px;
+}
+
+#containers>*>.ad-box.height-300 {
+    height: 300px;
+}
