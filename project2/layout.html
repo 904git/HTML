@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단 레이아웃 연습</title>
+    <style>
+        /* basic style */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #ccc;
+        }
+        /* layout style */
+        #wrapper {
+            min-width: 600px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        header, footer, .sub-container, .main-container, aside {
+            height: 50px;
+        }
+        header, footer {
+            clear: both;
+        }
+        section, aside {
+            float: left;
+        }
+        /* header style */
+        header {
+            background: red;
+        }
+        /* section style */
+        section {
+            background: orange;
+            width: 100%;
+            margin-right: -200px;
+        }
+        section > .sub-container,
+        aside {
+            background: blue;
+            float: left;
+            width: 200px;
+        }
+        section > .main-container {
+            background: navy;
+            margin: 0 200px;
+        }
+        /* aside style */
+        /* footer style */
+        footer {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            Header
+        </header>
+        <section>
+            <div class="sub-container">Sub container</div>
+            <div class="main-container">Main container</div>
+        </section>
+        <aside>
+            Aside
+        </aside>
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
